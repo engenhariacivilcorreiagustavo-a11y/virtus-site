@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Virtus Engenharia e Empreendimentos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Noto Sans"}
+    .logo-img{height:auto}
+    .card{box-shadow:0 10px 25px rgba(2,6,23,.08)}
+    /* Ajuste o HEX abaixo para casar 100% com a cor da sua logo */
+    :root{--brand:#0ea5e9;--brand-hover:#0284c7}
+    .brand-btn{background:var(--brand)!important}
+    .brand-btn:hover{background:var(--brand-hover)!important}
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+      <a href="#topo" class="flex items-center gap-3">
+        <img src="./assets/img/logo-virtus.png" alt="Logo Virtus" class="logo-img h-20 md:h-24 w-auto object-contain">
+        <div class="leading-tight">
+          <div class="text-xl font-extrabold text-slate-900">Virtus</div>
+          <div class="text-sky-700 font-semibold">Engenharia e Empreendimentos</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-2">
+        <a href="#servicos" class="px-3 py-2 rounded-lg hover:bg-slate-100">Serviços</a>
+        <a href="#financiamento" class="px-3 py-2 rounded-lg hover:bg-slate-100">Financiamento Caixa</a>
+        <a href="#obras" class="px-3 py-2 rounded-lg hover:bg-slate-100">Obras</a>
+        <a href="#atendimento" class="px-3 py-2 rounded-lg hover:bg-slate-100">Atendimento</a>
+        <a href="#contato" class="px-3 py-2 rounded-lg hover:bg-slate-100">Contato</a>
+      </nav>
+      <a id="ctaTop" href="#contato" class="rounded-xl bg-sky-600 brand-btn text-white px-4 py-2 font-semibold">Falar no WhatsApp</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="topo" class="bg-gradient-to-br from-sky-50 to-white">
+    <div class="max-w-7xl mx-auto px-4 py-14 md:py-20 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
+          Projetos, Obras e Financiamento com a <span class="text-sky-700">Virtus</span>
+        </h1>
+        <p class="mt-4 text-lg text-slate-700">
+          Cuidamos do seu projeto do início ao fim: aprovação, execução e regularização.
+          Especialistas em financiamento pela Caixa.
+        </p>
+        <div class="mt-6 flex flex-wrap items-center gap-3">
+          <a href="#servicos" class="px-5 py-3 rounded-xl bg-sky-600 brand-btn text-white font-semibold">Ver serviços</a>
+          <a href="#financiamento" class="px-5 py-3 rounded-xl bg-white border border-slate-300 text-slate-900 font-semibold hover:bg-slate-100">Como financiar</a>
+        </div>
+        <p class="mt-6 text-sm text-slate-600">Atendimento em <strong>Minas</strong> e <strong>Bahia</strong>.</p>
+      </div>
+      <div class="relative">
+        <div class="card rounded-3xl bg-white p-6">
+          <div class="flex items-center gap-3">
+            <img src="./assets/img/logo-virtus.png" alt="Logo Virtus" class="logo-img h-16 md:h-20">
+            <div>
+              <div class="text-xl font-extrabold">Virtus</div>
+              <div class="font-semibold text-sky-700">Engenharia e Empreendimentos</div>
+            </div>
+          </div>
+          <ul class="mt-6 space-y-3 text-slate-700">
+            <li>✔ Projetos arquitetônicos, estruturais, elétricos e hidráulicos</li>
+            <li>✔ Execução de obras residenciais completas</li>
+            <li>✔ Acompanhamento e regularização de obra</li>
+            <li>✔ Especialistas em financiamento Caixa</li>
+          </ul>
+          <a href="#contato" class="mt-6 inline-flex items-center justify-center w-full rounded-xl bg-emerald-600 text-white px-5 py-3 font-semibold hover:bg-emerald-700">Solicitar orçamento</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="py-20 md:py-24">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="mb-10 md:mb-12 text-center">
+        <h2 class="text-3xl md:text-4xl font-extrabold">Serviços</h2>
+        <p class="mt-3 text-slate-600">Do projeto ao acabamento — com gestão técnica completa.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card rounded-2xl bg-white p-6">
+          <h3 class="font-bold text-lg">Projetos Arquitetônicos</h3>
+          <p class="mt-2 text-slate-600">Conceito, plantas, aprovação e detalhamento.</p>
+        </div>
+        <div class="card rounded-2xl bg-white p-6">
+          <h3 class="font-bold text-lg">Projetos Estruturais</h3>
+          <p class="mt-2 text-slate-600">Dimensionamento seguro e econômico.</p>
+        </div>
+        <div class="card rounded-2xl bg-white p-6">
+          <h3 class="font-bold text-lg">Instalações Elétricas e Hidráulicas</h3>
+          <p class="mt-2 text-slate-600">Projetos dentro das normas e com eficiência.</p>
+        </div>
+        <div class="card rounded-2xl bg-white p-6">
+          <h3 class="font-bold text-lg">Execução de Obras</h3>
+          <p class="mt-2 text-slate-600">Do alicerce ao acabamento, com ART/CREA.</p>
+        </div>
+        <div class="card rounded-2xl bg-white p-6">
+          <h3 class="font-bold text-lg">Gerenciamento & Regularização</h3>
+          <p class="mt-2 text-slate-600">Aprovação, Habite-se, CND/INSS, ISSQN e mais.</p>
+        </div>
+        <div class="card rounded-2xl bg-white p-6">
+          <h3 class="font-bold text-lg">Avaliação de Imóveis</h3>
+          <p class="mt-2 text-slate-600">Laudos técnicos para compra e venda.</p>
+        </div>
+        <div class="card rounded-2xl bg-white p-6">
+          <h3 class="font-bold text-lg">Pintura de Quadras</h3>
+          <p class="mt-2 text-slate-600">Demarcação esportiva profissional.</p>
+        </div>
+        <div class="card rounded-2xl bg-white p-6">
+          <h3 class="font-bold text-lg">Campo Society (Grama Sintética)</h3>
+          <p class="mt-2 text-slate-600">Execução completa do projeto ao jogo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Financiamento -->
+  <section id="financiamento" class="py-20 md:py-24 bg-sky-50">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-extrabold">Financiamento pela Caixa</h2>
+        <p class="mt-4 text-slate-700">
+          A Virtus Engenharia e Empreendimentos auxilia em todo o processo de financiamento:
+          da simulação ao acompanhamento da aprovação junto à Caixa Econômica Federal.
+        </p>
+        <ul class="mt-4 space-y-2 text-slate-700 list-disc list-inside">
+          <li>Simulação de crédito habitacional</li>
+          <li>Montagem e envio da documentação</li>
+          <li>Acompanhamento de análise e aprovação</li>
+          <li>Execução da obra com recursos financiados</li>
+        </ul>
+        <a href="#contato" class="mt-6 inline-flex items-center justify-center rounded-xl bg-sky-600 brand-btn text-white px-5 py-3 font-semibold">Quero simular meu financiamento</a>
+      </div>
+      <div class="card rounded-3xl bg-white p-3">
+        <!-- Salve sua imagem em assets/img/foto-financiamento.jpg -->
+        <img src="./assets/img/foto-financiamento.jpg" alt="Financiamento Caixa" class="w-full h-64 md:h-80 object-cover rounded-2xl">
+      </div>
+    </div>
+  </section>
+
+  <!-- Obras -->
+  <section id="obras" class="py-20 md:py-24">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="mb-10 text-center">
+        <h2 class="text-3xl md:text-4xl font-extrabold">Obras</h2>
+        <p class="mt-3 text-slate-600">Alguns registros de projetos e execuções recentes.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card rounded-2xl bg-white overflow-hidden">
+          <img src="./assets/img/fachada-moderna.jpeg" alt="Fachada Moderna" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-semibold">Fachada Moderna</h3>
+            <p class="text-sm text-slate-600">Design contemporâneo e funcional.</p>
+          </div>
+        </div>
+        <div class="card rounded-2xl bg-white overflow-hidden">
+          <img src="./assets/img/vigas-baldrames.jpeg" alt="Vigas e Baldrames" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-semibold">Vigas e Baldrames</h3>
+            <p class="text-sm text-slate-600">Execução estrutural de fundações.</p>
+          </div>
+        </div>
+        <div class="card rounded-2xl bg-white overflow-hidden">
+          <img src="./assets/img/estrutura-de-laje.jpeg" alt="Estrutura de Laje" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-semibold">Estrutura de Laje</h3>
+            <p class="text-sm text-slate-600">Concreto armado de alta resistência.</p>
+          </div>
+        </div>
+        <div class="card rounded-2xl bg-white overflow-hidden">
+          <img src="./assets/img/forro-de-gesso.jpeg" alt="Forro de Gesso" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-semibold">Forro de Gesso</h3>
+            <p class="text-sm text-slate-600">Acabamento moderno e bem iluminado.</p>
+          </div>
+        </div>
+        <div class="card rounded-2xl bg-white overflow-hidden">
+          <img src="./assets/img/assentamento-de-porcelanato.jpeg" alt="Assentamento de Porcelanato" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-semibold">Assentamento de Porcelanato</h3>
+            <p class="text-sm text-slate-600">Acabamento de alto padrão.</p>
+          </div>
+        </div>
+        <div class="card rounded-2xl bg-white overflow-hidden">
+          <img src="./assets/img/pintura-de-quadra.jpeg" alt="Pintura de Quadra" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-semibold">Pintura de Quadra</h3>
+            <p class="text-sm text-slate-600">Demarcação esportiva profissional.</p>
+          </div>
+        </div>
+        <div class="card rounded-2xl bg-white overflow-hidden">
+          <img src="./assets/img/quadra-poliesportiva.jpeg" alt="Quadra Poliesportiva" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-semibold">Quadra Poliesportiva</h3>
+            <p class="text-sm text-slate-600">Execução completa para práticas esportivas.</p>
+          </div>
+        </div>
+        <div class="card rounded-2xl bg-white overflow-hidden">
+          <img src="./assets/img/campo-society.jpeg" alt="Campo Society" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-semibold">Campo Society</h3>
+            <p class="text-sm text-slate-600">Grama sintética e acabamento de primeira.</p>
+          </div>
+        </div>
+        <div class="card rounded-2xl bg-white overflow-hidden">
+          <img src="./assets/img/instalacao-hidraulica-de-piscina.jpeg" alt="Instalação Hidráulica de Piscina" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-semibold">Instalação de Piscina</h3>
+            <p class="text-sm text-slate-600">Projeto hidráulico completo.</p>
+          </div>
+        </div>
+        <div class="card rounded-2xl bg-white overflow-hidden">
+          <img src="./assets/img/gramado-sintetico.jpeg" alt="Gramado Sintético" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-semibold">Gramado Sintético</h3>
+            <p class="text-sm text-slate-600">Execução para campos e quadras.</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-10">
+        <a href="#contato" class="inline-flex items-center justify-center rounded-xl bg-slate-900 text-white px-5 py-3 font-semibold hover:bg-slate-800">Quero um orçamento</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Atendimento -->
+  <section id="atendimento" class="py-20 md:py-24 bg-slate-900 text-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-extrabold">Atendimento em Minas e Bahia</h2>
+          <p class="mt-4 text-slate-200">Selecione sua cidade ou escolha “Outra” para digitar.</p>
+        </div>
+        <div class="card rounded-2xl bg-white p-6 text-slate-800">
+          <label for="cidade" class="block font-semibold">Selecione sua cidade</label>
+          <select id="cidade" class="mt-2 w-full rounded-xl border-slate-300 focus:ring-2 focus:ring-sky-400">
+            <option value="">— Escolha —</option>
+            <option>Águas Vermelhas (MG)</option>
+            <option>Berizal (MG)</option>
+            <option>Cândido Sales (BA)</option>
+            <option>Condeúba (BA)</option>
+            <option>Divisa Alegre (MG)</option>
+            <option>Encruzilhada (BA)</option>
+            <option>Iguaí (BA)</option>
+            <option>Itambé (BA)</option>
+            <option>Itapetinga (BA)</option>
+            <option>Itarantim (BA)</option>
+            <option>Jequié (BA)</option>
+            <option>Macarani (BA)</option>
+            <option>Maiquinique (BA)</option>
+            <option>Mata Verde (MG)</option>
+            <option>Planalto (BA)</option>
+            <option>Poções (BA)</option>
+            <option>Ribeirão do Largo (BA)</option>
+            <option>Tremedal (BA)</option>
+            <option value="__outra__">Outra (digite sua cidade)</option>
+          </select>
+          <input id="cidadeOutra" type="text" placeholder="Digite sua cidade" class="hidden mt-3 w-full rounded-xl border-slate-300 focus:ring-2 focus:ring-sky-400"/>
+          <button id="btnCidade" class="mt-4 inline-flex items-center justify-center rounded-xl bg-sky-600 brand-btn text-white px-5 py-3 font-semibold hover:bg-sky-700 w-full">Falar com a Virtus</button>
+          <p id="cidadeMsg" class="mt-3 text-sm text-slate-600 hidden">Abrindo conversa no WhatsApp…</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="py-20 md:py-24">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="mb-8 text-center">
+        <h2 class="text-3xl md:text-4xl font-extrabold">Contato</h2>
+        <p class="mt-3 text-slate-600">Tire dúvidas, solicite uma visita técnica ou simule seu financiamento.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="card rounded-2xl bg-white p-6">
+          <h3 class="font-bold text-lg">WhatsApp</h3>
+          <p class="mt-2 text-slate-600">Atendimento rápido para orçamentos e dúvidas.</p>
+          <a id="waButton" href="#" class="mt-4 inline-flex items-center justify-center rounded-xl bg-emerald-600 text-white px-5 py-3 font-semibold hover:bg-emerald-700 w-full">Abrir WhatsApp</a>
+          <p class="mt-3 text-xs text-slate-500">Se o app não abrir, verifique se está logado no WhatsApp Web.</p>
+        </div>
+        <div class="card rounded-2xl bg-white p-6">
+          <h3 class="font-bold text-lg">E-mail</h3>
+          <p class="mt-2 text-slate-600">Envie plantas, croquis ou documentos para análise técnica.</p>
+          <a id="mailButton" href="#" class="mt-4 inline-flex items-center justify-center rounded-xl bg-slate-900 text-white px-5 py-3 font-semibold hover:bg-slate-800 w-full">Enviar e-mail</a>
+          <p class="mt-3 text-xs text-slate-500">Responderemos em horário comercial.</p>
+        </div>
+      </div>
+      <div class="text-center mt-10">
+        <p class="text-sm text-slate-600">© <span id="year"></span> Virtus Engenharia e Empreendimentos — Equipe técnica registrada no CREA.</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // === CONFIG ===
+    const PHONE_E164 = "5577998196713"; // 55 + DDD + número
+    const EMAIL = "engenhariacivil.correiagustavo@gmail.com";
+
+    function buildWaMsg(extra=""){
+      const base = "Olá! Vim pelo site da Virtus Engenharia e Empreendimentos e gostaria de um orçamento.";
+      return encodeURIComponent(extra ? base + " %0A" + extra : base);
+    }
+
+    // === CTAs: WhatsApp / E-mail ===
+    const waButton = document.getElementById('waButton');
+    if (waButton) waButton.href = `https://wa.me/${PHONE_E164}?text=${buildWaMsg()}`;
+
+    const mailButton = document.getElementById('mailButton');
+    if (mailButton) mailButton.href = `mailto:${EMAIL}?subject=${encodeURIComponent('Orçamento - Virtus')}&body=${decodeURIComponent(buildWaMsg())}`;
+
+    // Botão do topo -> WhatsApp direto
+    const ctaTop = document.getElementById('ctaTop');
+    if (ctaTop) ctaTop.href = `https://wa.me/${PHONE_E164}?text=${buildWaMsg('Tenho interesse em Financiamento Caixa')}`;
+
+    // === Navegação suave para anchors ===
+    document.querySelectorAll('a').forEach(a=>{
+      a.addEventListener('click', (e)=>{
+        const href = a.getAttribute('href') || '';
+        if(href.startsWith('#') && href.length > 1){
+          const el = document.querySelector(href);
+          if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}); }
+        }
+      });
+    });
+
+    // === Atendimento: select de cidades + campo "Outra" ===
+    const cidadeSelect = document.getElementById('cidade');
+    const btnCidade = document.getElementById('btnCidade');
+    const cidadeMsg = document.getElementById('cidadeMsg');
+    const outraInput = document.getElementById('cidadeOutra');
+
+    if (cidadeSelect) {
+      cidadeSelect.addEventListener('change', () => {
+        if(!outraInput) return;
+        if (cidadeSelect.value === '__outra__') { outraInput.classList.remove('hidden'); outraInput.focus(); }
+        else { outraInput.classList.add('hidden'); outraInput.value = ''; }
+      });
+    }
+
+    if (outraInput) {
+      // Enter no campo "Outra" envia direto
+      outraInput.addEventListener('keydown', (e)=>{
+        if(e.key === 'Enter'){
+          e.preventDefault();
+          if(btnCidade) btnCidade.click();
+        }
+      });
+    }
+
+    if (btnCidade) {
+      btnCidade.addEventListener('click', () => {
+        let cidade = cidadeSelect ? cidadeSelect.value : '';
+        if (!cidade) { alert('Selecione uma cidade para continuar.'); return; }
+        if (cidade === '__outra__') {
+          const outra = (outraInput ? outraInput.value.trim() : '');
+          if (!outra) { alert('Digite o nome da cidade.'); if(outraInput) outraInput.focus(); return; }
+          cidade = outra;
+        }
+        if (cidadeMsg) cidadeMsg.classList.remove('hidden');
+        const msg = buildWaMsg(`Minha cidade: *${cidade}*`);
+        window.location.href = `https://wa.me/${PHONE_E164}?text=${msg}`;
+      });
+    }
+
+    // Ano no rodapé
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
